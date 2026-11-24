@@ -19,8 +19,6 @@
 
 ## Read the samples yourself
 
-![decoder running on the samples](docs/decode.gif)
-
 ```bash
 python3 -m decoder timeline samples/      # what it heard, packet by packet
 python3 -m decoder stats samples/         # totals, gaps, most heard tags
