@@ -1,0 +1,5 @@
+# FICTION: part of a story on X. These are RFC 5737 documentation
+# addresses. They are not real and are not routable.
+203.0.113.42:443    insight ambient upload (every 90s)
+203.0.113.57:443    household profile (daily)
+198.51.100.12:443   fallback
