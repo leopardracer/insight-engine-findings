@@ -1,0 +1,24 @@
+{
+  "v": 3,
+  "module": "insight.ambient",
+  "device_id": "PS5-7F3A-████-████",
+  "ts": "2026-11-23T22:11:30Z",
+  "game_state": "PAUSED",
+  "paused_for_min": 17,
+  "mic": {
+    "source": "controller",
+    "consent_flag": false
+  },
+  "ambient_tags": [
+    "adults:2",
+    "keyword:rent",
+    "keyword:overtime"
+  ],
+  "household": {
+    "adults": 2,
+    "children": 1,
+    "income_band": "C"
+  },
+  "dest": "203.0.113.42:443",
+  "next_upload_s": 90
+}

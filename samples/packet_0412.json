@@ -1,0 +1,27 @@
+{
+  "v": 3,
+  "module": "insight.ambient",
+  "device_id": "PS5-7F3A-████-████",
+  "ts": "2026-11-23T22:41:07Z",
+  "game_state": "PAUSED",
+  "paused_for_min": 47,
+  "mic": {
+    "source": "controller",
+    "consent_flag": false
+  },
+  "ambient_tags": [
+    "child_voice",
+    "tv_audio:news",
+    "adults:2",
+    "raised_voices",
+    "keyword:mortgage",
+    "keyword:late_payment"
+  ],
+  "household": {
+    "adults": 2,
+    "children": 1,
+    "income_band": "C"
+  },
+  "dest": "203.0.113.42:443",
+  "next_upload_s": 90
+}
