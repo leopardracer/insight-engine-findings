@@ -19,5 +19,6 @@
     "income_band": "C"
   },
   "dest": "203.0.113.42:443",
-  "next_upload_s": 90
+  "next_upload_s": 90,
+  "debug_ref": "dGhyZWUgZW5naW5lZXJzIGZsYWdnZWQgdGhpcyBiZWZvcmUgeW91LiBhbGwgdGhyZWUgd2VyZSByZXN0cnVjdHVyZWQuIGFzayB0aGVtIHdoYXQgaGFwcGVuZWQgaW4ganVuZS4="
 }
