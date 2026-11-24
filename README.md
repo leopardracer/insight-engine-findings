@@ -19,11 +19,27 @@
 
 ## Read the samples yourself
 
+![decoder running on the samples](docs/decode.gif)
+
 ```bash
-python3 decoder/decode.py samples/
+python3 -m decoder timeline samples/      # what it heard, packet by packet
+python3 -m decoder stats samples/         # totals, gaps, most heard tags
+python3 -m decoder csv samples/ > out.csv # flat export
+make test                                 # unit tests
 ```
 
-The decoder prints a timeline of every packet in `samples/`: what the "console" was doing and what it "heard".
+The six files in `samples/` are a selection from one evening, not consecutive uploads. Standard library only, Python 3.10+.
+
+Some packets carry fields the decoder doesn't explain. `timeline --debug` will point at them. What they say is up to you to work out.
+
+## Repo layout
+
+```
+decoder/    payload parsing (v2, v3), stats, CLI
+samples/    synthetic packets, device IDs masked
+tools/      redact.py: masks device IDs before publishing
+tests/      unit tests, run in CI on every push
+```
 
 ## Check your own network
 
