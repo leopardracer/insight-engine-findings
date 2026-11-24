@@ -1,5 +1,5 @@
 name: lint
-on: [push]
+on: [push, pull_request]
 jobs:
   decoder:
     runs-on: ubuntu-latest
@@ -8,5 +8,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: python -m py_compile decoder/decode.py
-      - run: python decoder/decode.py samples/
+      - run: python -m compileall -q decoder tools tests
+      - run: python tools/redact.py --check samples/
+      - run: python -m unittest discover -s tests -t . -v
+      - run: python -m decoder stats samples/
