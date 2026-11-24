@@ -8,7 +8,7 @@ import json
 import sys
 from pathlib import Path
 
-SUPPORTED = {2}
+SUPPORTED = {3}
 
 
 def load(path: Path) -> dict:
